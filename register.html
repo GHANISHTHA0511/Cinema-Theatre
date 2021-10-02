@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="cinema.png" id="logo-image">
+            <h2>CINEMALL</h2>
+        </div>
+        <nav>
+            <ul class="links">
+                <li><a class="link" href="index.html">HOME</a></li>
+                <li><a class="link" href="movies.html">MOVIES</a></li>
+                <li><a class="link" href="register.html">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="video1">
+        <video src="video1.mp4" autoplay mute loop></video>
+         <div class="regform"><h1>Registration Form</h1></div>
+           <div class="mane">             
+               
+               <form onsubmit="myFunction()">
+
+               <div id="name">
+                   <h2 class="name">Name</h2>
+                   <input class="firstname" type="text" name="first_name"><br>
+                   <label class="firstlabel">first name</label>
+                   <input class="lastname" type="text" name="last_name">
+                   <label class="lastlabel">last name</label>
+
+               </div>
+               <h2 class="name">Email</h2>
+               <input class="email" type="text" name="email">
+               <h2 class="name">Phone</h2>
+               <input class="code" type="text" name="area_code">
+               <label class="area-code">Area code</label>
+               <input class="number" type="text" name="phone">
+               <label class="phone-number">Phone Number</label>
+
+               <h2 class="name">Movie Options</h2>
+               <select class="option" name="subject">
+                   <option disabled="disabled" selected="selected">--Choose Option</option>
+                   <option>3 Idiots</option>
+                   <option>Barfi</option>
+                   <option>Piku</option>
+                   <option>Raaz Reboot</option>
+                   <option>Dhamaal</option>
+                   <option>Dear Zindagi</option>
+               </select>
+               <h2 id="student">Are you interested?</h2>
+               <label class="radio">
+                   <input class="radio-one" type="radio"  name="name">
+                   <span class="checkmark"></span>
+                   Yes
+               </label>
+               <label class="radio">
+                 <input class="radio=two" type="radio" name="name">
+                 <span class="checkmark"></span>
+                 No
+                 </label><br>
+                 <button type="submit">Register</button>
+               <br><br>
+               <h1 class="end">Movies will make you famous; Television will make you rich; But our theatre will make you good.</h1>
+            </form>
+
+            <script>
+             function myFunction() {
+               alert("Thank you for submitting the form. One of our team member will contact you ASAP.");
+             }
+           </script>
+
+
+
+    
+</body>
+</html>

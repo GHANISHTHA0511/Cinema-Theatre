@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    justify-content: space-evenly;
+    display: flex;
+    width:90%;
+    height:10vh;
+    align-items: center;
+}
+.logo, .links{
+    display: flex;
+}
+.logo{
+    flex:1;
+    width:20px;
+    
+}
+#logo-image{
+    height:90px;
+    
+
+}
+.logo h2{
+    font-weight: 600;
+	font-size: 23px;
+	margin: 5px;
+    margin-top:30px;
+    margin-left:-20px;
+    
+}
+nav{
+    flex:2;
+}
+.links{
+    
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 60px;
+    
+}
+
+/* .links{
+    display: flex;
+
+} */
+
+    /* display:flex; */
+    
+    /* margin-top:35px;
+    margin-left:900px; */
+  .link{
+      text-decoration: none;
+      padding:5px 4px;
+      font-size: 20px;
+      
+      color:rgb(4, 105, 4);
+      
+  }
+  ul li a:hover{
+      color:black;
+      font-weight: bold;
+      
+  }  
+  .main-heading{
+      
+      width:60%;
+      margin-left:30px;
+      padding:25px 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      
+  }
+  #heading{
+    font-size: 45px;
+    background:linear-gradient(to left, #c2b3d3, #FC0FC0);
+    filter: drop-shadow(0px 9px 3px rgb(18, 20, 44));
+    color:black;
+
+  }
+  #para{
+      padding-top:25px;
+      font-size: 30px;
+  }
+  .flex-container{
+      display:flex;
+      width: 90%;
+	margin: auto;
+	min-height: 90vh;
+	align-items: center;
+
+      
+  }
+  #theatre{
+      margin-right: 100px;
+      filter: drop-shadow(0px 10px 6px rgb(18, 20, 44));
+      animation:drop 2s ease;
+  }
+  #btn{
+      margin:60px 1px;
+      padding:20px 30px;
+      font-size: 15px;
+      border:2px solid red;
+      
+
+  }
+  #button{
+      text-decoration: none;
+      color:green;
+      
+  }
+  .zoom{
+    
+    transition: transform .2s;
+
+  }
+  .zoom:hover{
+      
+    transform: scale(1.2);
+    
+
+  }
+   
+  #backside{
+      position:absolute;
+      top:20vh;
+      left:7vw;
+      opacity:0.2;
+      z-index:-1;
+      height:40%;
+  }
+
+  @keyframes drop{
+      0%{
+          opacity:0;
+          transform:translateY(-100px);
+      }
+      100%{
+          opacity:1;
+          transform:translateY(0px);
+      }
+  }
+ 
+@media screen and (max-width: 900px) {
+	.flex-container {
+		flex-direction: column;
+	}
+	.main-heading {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	#heading {
+		font-size: 30px;
+	}
+	#para {
+		font-size: 18px;
+	}
+	#btn {
+		padding: 10px 0px 0px 0px;
+	}
+	
+	#theatre {
+		height: 80%;
+	}
+	
+	#backside {
+		opacity: 0.1;
+	}
+}
+
+
+    
+
+
+
+
+
